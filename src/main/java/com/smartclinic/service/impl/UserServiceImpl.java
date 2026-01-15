@@ -1,4 +1,4 @@
-package com.smartclinic.service;
+package com.smartclinic.service.impl;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.smartclinic.model.User;
 import com.smartclinic.repository.UserRepository;
+import com.smartclinic.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

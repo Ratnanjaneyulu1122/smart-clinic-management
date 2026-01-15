@@ -7,15 +7,15 @@ import com.smartclinic.model.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	/*
-	 * ToDo:save()
+	 * This gives you:
+	 * 
+	 * save()
 	 * 
 	 * findAll()
 	 * 
 	 * findById()
 	 * 
 	 * delete()
-	 * 
-	 * using Hibernate we are doing some operations like create get,etc.
 	 */
-
+	
 }
