@@ -7,7 +7,7 @@ import com.smartclinic.model.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	/*
-	 * This gives you:
+	 * This gives us:
 	 * 
 	 * save()
 	 * 

@@ -2,6 +2,8 @@ package com.smartclinic.model;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -34,6 +36,7 @@ public class Doctor {
 	private String specialization;
 
 	@OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Appointment> appointments;
 
 }
@@ -47,9 +50,9 @@ public class Doctor {
  * 
  * So:
  * 
- * Doctor → 1️ to 🔁 Appointments
+ * Doctor → 1️ to many Appointments
  * 
- * Patient → 1️ to 🔁 Appointments
+ * Patient → 1️ to many Appointments
  * 
  * This is a One-to-Many relationship.
  */

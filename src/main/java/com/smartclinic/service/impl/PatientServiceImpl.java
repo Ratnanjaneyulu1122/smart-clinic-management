@@ -2,10 +2,13 @@ package com.smartclinic.service.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.smartclinic.model.Patient;
 import com.smartclinic.repository.PatientRepository;
 import com.smartclinic.service.PatientService;
 
+@Service
 public class PatientServiceImpl implements PatientService {
 	private final PatientRepository patientRepository;
 

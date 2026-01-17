@@ -2,6 +2,8 @@ package com.smartclinic.model;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,5 +35,6 @@ public class Patient {
 	private String email;
 
 	@OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Appointment> appointments;
 }
